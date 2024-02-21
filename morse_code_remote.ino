@@ -156,19 +156,19 @@ void morse_led(const String &morse_letter) {
         dash();
       }
   }
-  delay(750); // Space between letters is 3 units
+  delay(750); 
 }
 
 void dot() {
   digitalWrite(LED_PIN, HIGH);
   delay(500); // A dot is 1 unit
   digitalWrite(LED_PIN, LOW);
-  delay(500); // Space between parts of the same letter is 1 unit
+  delay(500); 
 }
 
 void dash() {
   digitalWrite(LED_PIN, HIGH);
   delay(1000); // A dash is 3 units
   digitalWrite(LED_PIN, LOW);
-  delay(500); // Space between parts of the same letter is 1 unit
+  delay(500); 
 }
